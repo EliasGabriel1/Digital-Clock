@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import "./App.css"
+import Svg from "./Compontents/Svg"
+
 const date = new Date();
 export default function App() {
   const [dateTime, setDateTime] = useState({
@@ -19,9 +22,10 @@ export default function App() {
   }, []);
   return (
     <div className="App">
-      <div>
-        {dateTime.hours}:{dateTime.minutes}:{dateTime.seconds}
+      <div className="Time">
+        <span className="Horas"> {dateTime.hours}</span>:<span className="Minutos">{dateTime.minutes}</span>:<span className="segundos">{dateTime.seconds}</span>
       </div>
+      <Svg />
     </div>
   );
 }
