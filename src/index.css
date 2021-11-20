@@ -92,3 +92,15 @@ main {
 .liga-desliga__checkbox:focus + .liga-desliga__botao::before {
   outline: 3px dotted #CCC;
 }
+
+.dark-theme{
+  background-color: #000;
+}
+
+.dark-theme .Time{
+  color: #fff
+}
+
+.dark-theme svg path{
+  fill: #fff
+}
