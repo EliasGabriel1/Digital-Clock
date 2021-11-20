@@ -34,5 +34,9 @@
 @media (max-width:900px) {
   .App {
     flex-direction:column;
+    margin-top: 45px;
+  }
+  svg{
+    width: 40px;
   }
 }

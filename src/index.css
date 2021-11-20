@@ -9,10 +9,11 @@
 
 img{
   max-width: 500px;
+  width: 80vw;
 }
 
-.conteudo{
-  height: 100vh;
+.Conteudo{
+  height: 80vh;
 }
 
 main {
