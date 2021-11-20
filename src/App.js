@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
-import "./App.css"
-import Svg from "./Compontents/Svg"
+import "./App.css";
+import Svg from "./Compontents/Svg";
+import GroupSociais from "./Compontents/GroupSociais";
+import ButtonTheme from "./Compontents/ButtonThema";
 
 const date = new Date();
 export default function App() {
   const [dateTime, setDateTime] = useState({
     hours: date.getHours(),
     minutes: date.getMinutes(),
-    seconds: date.getSeconds()
+    seconds: date.getSeconds(),
   });
   useEffect(() => {
     const timer = setInterval(() => {
@@ -15,17 +17,23 @@ export default function App() {
       setDateTime({
         hours: date.getHours(),
         minutes: date.getMinutes(),
-        seconds: date.getSeconds()
+        seconds: date.getSeconds(),
       });
     }, 1000);
     return () => clearInterval(timer);
   }, []);
   return (
-    <div className="App">
-      <div className="Time">
-        <span className="Horas"> {dateTime.hours}</span>:<span className="Minutos">{dateTime.minutes}</span>:<span className="segundos">{dateTime.seconds}</span>
+    <div className="Conteudo">
+      <ButtonTheme/>
+      <div className="App">
+        <div className="Time">
+          <span className="Horas"> {dateTime.hours}</span>:
+          <span className="Minutos">{dateTime.minutes}</span>:
+          <span className="segundos">{dateTime.seconds}</span>
+        </div>
+        <Svg />
       </div>
-      <Svg />
+      <GroupSociais/>
     </div>
   );
 }
