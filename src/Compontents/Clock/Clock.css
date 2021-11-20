@@ -1,0 +1,15 @@
+
+.Time{
+    font-size: 18.301610541727673vw;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .Time .segundos{
+    font-size: 9.150805270863836vw ;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  

@@ -5,32 +5,6 @@
   align-items: center;
 }
 
-.Time{
-  font-size: 18.301610541727673vw;
-  font-style: italic;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.Time .segundos{
-  font-size: 9.150805270863836vw ;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
-.Content-sociais{
-  display: flex;
-  justify-content: flex-end;
-}
-.GroupSociais{
-  margin: 30px 30px 0 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-}
-
-
 @media (max-width:900px) {
   .App {
     flex-direction:column;

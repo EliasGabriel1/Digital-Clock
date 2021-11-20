@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Github from '../Github'
 import Instagram from '../Instagram'
 import Twitter from '../Twitter'
+import "./GrupoSociais.css"
 
 export default class GroupSociais extends Component {
     render() {
