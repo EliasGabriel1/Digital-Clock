@@ -6,8 +6,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Conteudo{
-  height: 80vh;
+.Conteudo {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .dark-theme{
